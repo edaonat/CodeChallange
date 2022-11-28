@@ -37,7 +37,7 @@ Feature:Objective02
         And user verifies that there is a "You haven't typed anything!" error
         And user verifies that save button is disabled
         Then user clicks on the exit button
-        When user deletes that comment
+        And user deletes that comment
 
 
 
