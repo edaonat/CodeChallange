@@ -1,4 +1,4 @@
-# plentificCodeChallange
+#CodeChallange
 
 Trello login credentials:   
 username: trellofortest@gmail.com     
