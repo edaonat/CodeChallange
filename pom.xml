@@ -51,7 +51,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>Runner.java</mainClass>
+                                <mainClass>runner.java</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
