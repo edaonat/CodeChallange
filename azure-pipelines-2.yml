@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-2019'
 
 steps:
 - task: Maven@4
@@ -19,4 +19,15 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'install'
+    goals: 'test'
+
+- task: PublishTestResults@2
+
+  inputs:
+
+    testResultsFormat: 'JUnit'
+
+    testResultsFiles: '**/TEST-TestSuite.xml'
+
+    searchFolder: '$(System.DefaultWorkingDirectory)\target\surefire-reports\old'
+
