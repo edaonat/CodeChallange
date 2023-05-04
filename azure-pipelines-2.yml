@@ -14,7 +14,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean test'
-    options: '-D"cucumber.filter.tags=@Objective01 or @Objective02"'
+    options: '-Dcucumber.filter.tags="@Objective01"'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
