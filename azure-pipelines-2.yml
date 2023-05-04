@@ -13,8 +13,8 @@ steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'test'
-    options: '-Dtest="runner.java"'
+    goals: 'clean test'
+    options: '-Dtest="runner"'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
