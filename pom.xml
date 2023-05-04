@@ -97,7 +97,7 @@
             </plugin>
         </plugins>
     </build>
-	<profiles>
+<!-- 	<profiles>
         <profile>
             <id>runner</id>
             <build>
@@ -119,5 +119,5 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles> -->
 </project>
