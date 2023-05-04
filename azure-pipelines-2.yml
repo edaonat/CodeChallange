@@ -31,5 +31,5 @@ steps:
 
     testResultsFiles: '**/TEST-TestSuite.xml'
 
-    searchFolder: '$(System.DefaultWorkingDirectory)\target\surefire-reports\old'
+    searchFolder: '$(System.DefaultWorkingDirectory)\target'
 
