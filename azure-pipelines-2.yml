@@ -29,7 +29,7 @@ steps:
 
     testResultsFormat: 'JUnit'
 
-    testResultsFiles: '**/TEST-TestSuite.xml'
+    testResultsFiles: 'TEST-RESULTS.xml'
 
     searchFolder: '$(System.DefaultWorkingDirectory)\target'
 
