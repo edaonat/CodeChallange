@@ -24,12 +24,9 @@ steps:
     sonarQubeRunAnalysis: false
 
 - task: PublishTestResults@2
-
   inputs:
-
     testResultsFormat: 'JUnit'
-
-    testResultsFiles: 'TEST-RESULTS.xml'
-
-    searchFolder: '$(System.DefaultWorkingDirectory)\target'
+    testResultsFiles: '**/test-report.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    failTaskOnFailedTests: true
 
